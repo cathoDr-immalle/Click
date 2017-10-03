@@ -20,9 +20,17 @@ namespace Click
     /// </summary>
     public partial class MainWindow : Window
     {
+        int Teller = 0;
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Knop1_Click(object sender, RoutedEventArgs e)
+        {
+            Teller = Teller + 1;
+            Knop1.Content = Teller;
         }
     }
 }
